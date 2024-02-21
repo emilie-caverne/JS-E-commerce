@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" id="openBurger">
+        <span></span>
+          <i
+            class="fa-solid fa-bars"
+            style="color: #8f8f8f"
+            id="menuBurger"
+          ></i>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <h1>Sneakers</h1>
+      <div id="navBurger">
+        <a id="closeBurger" href="#" class="close">×</a>
+        <nav>
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+
+      <i class="fa-solid fa-cart-shopping" id="panier"></i>
+      <img
+        src="./IMG/pngtree-cute-bearded-boy-image_1455203.jpg"
+        class="profil"
+      />
+    </header>
+    <main>
+      <section class="S1">
+        <div id="grand">
+          <img
+            src="./IMG/chaussure-air-force-1-07-pour-npDqNV (1).png"
+            alt="Chauss1"
+            class="grandeImage"
+          />
+          <div id="media">
+            <div class="slider fade">
+              <div class="slide-index">1 / 4</div>
+              <img
+                src="./IMG/chaussure-air-force-1-07-pour-npDqNV (1).png"
+                alt="Chauss2"
+                class="chauss"
+              />
+            </div>
+            <div class="slider fade">
+              <div class="slide-index">2 / 4</div>
+              <img
+                src="./IMG/chaussure-air-force-1-07-pour-npDqNV (2).png"
+                alt="Chauss3"
+                class="chauss"
+              />
+            </div>
+            <div class="slider fade">
+              <div class="slide-index">3 / 4</div>
+              <img
+                src="./IMG/chaussure-air-force-1-07-pour-npDqNV (3).png"
+                alt="Chauss4"
+                class="chauss"
+              />
+            </div>
+            <div class="slider fade">
+              <div class="slide-index">4 / 4</div>
+              <img
+                src="./IMG/chaussure-air-force-1-07-pour-npDqNV.png"
+                alt="Chauss5"
+                class="chauss"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">
+              <i
+                class="fa-solid fa-arrow-right fa-flip-horizontal"
+                style="color: #ff6600"
+              ></i>
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+              <i
+                class="fa-solid fa-arrow-right fa-flip-vertical"
+                style="color: #ff6600"
+              ></i>
+            </a>
+            <br />
+            <div class="slide-dot">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+        </div>
+        <article class="S1A2">
+          <img
+            src="./IMG/chaussure-air-force-1-07-pour-npDqNV (1).png"
+            alt="Chauss2"
+            class="petiteImage"
+          />
+          <img
+            src="./IMG/chaussure-air-force-1-07-pour-npDqNV (2).png"
+            alt="Chauss3"
+            class="petiteImage"
+          />
+          <img
+            src="./IMG/chaussure-air-force-1-07-pour-npDqNV (3).png"
+            alt="Chauss4"
+            class="petiteImage"
+          />
+          <img
+            src="./IMG/chaussure-air-force-1-07-pour-npDqNV.png"
+            alt="Chauss5"
+            class="petiteImage"
+          />
+        </article>
+      </section>
+      <section class="S2">
+        <h3>SNEAKER COMPANY</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="prix">
+          <h2>$125.00</h2>
+          <h4>50%</h4>
+        </div>
+        <p class="sold">$250.00</p>
+        <article class="A1">
+          <div class="quantite">
+            <i class="fa-solid fa-minus" style="color: #ff7a06" id="moins"></i>
+            <span id="compteur"> 00 </span>
+            <i class="fa-solid fa-plus" style="color: #ff7a06" id="plus"></i>
+          </div>
+          <button class="versPanier" type="button">
+            <i class="fas fa-shopping-cart" class="panier2"></i> Add to cart
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>Copyright : <span class="annee"></span> / Sneakers</p>
+  </footer>
+  <script src="JS/script.js"></script>
+</html>
